@@ -11,16 +11,16 @@ Enabling the Bundle in Symfony2
 1. Copy directories HttpClientInfoProvider and HttpClientInfoProviderBundle into your preferred place in Symfony2 project (vendor/eventio-httpclientinfoprovider)?
 2. Add HttpClientInfoProviderBundle to your AppKernel.php:
 
-	public function registerBundles()
-    {
-        $bundles = array(
-			// (...)
-			new Eventio\HttpClientInfoProviderBundle\EventioHttpClientInfoProviderBundle(),
-			// (...)
-		);
-	}
+		public function registerBundles()
+		{
+			$bundles = array(
+				// (...)
+				new Eventio\HttpClientInfoProviderBundle\EventioHttpClientInfoProviderBundle(),
+				// (...)
+			);
+		}
 	
 3. Add a dummy configuration varible to activate the extension in config.yml
 
-	eventio_http_client_info_provider: ~
+		eventio_http_client_info_provider: ~
 	
